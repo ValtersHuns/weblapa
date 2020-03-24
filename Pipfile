@@ -12,6 +12,7 @@ flask-sqlalchemy = "*"
 pillow = "*"
 gunicorn = "*"
 flask-wtf = "*"
+flask-login = "*"
 
 [requires]
 python_version = "3.7"
