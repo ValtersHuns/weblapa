@@ -28,6 +28,10 @@ def atteli():
 def result():
     return render_template('results.html', title='Results')
 
+@app.route("/biology/test")
+def test():
+    return render_template('test.html', title='Test')
+
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
