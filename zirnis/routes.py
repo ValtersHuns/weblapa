@@ -20,6 +20,14 @@ def home():
 def about():
     return render_template('about.html', title='About')
 
+@app.route("/biology/images")
+def atteli():
+    return render_template('atteli.html', title='Images')
+
+@app.route("/biology/results")
+def result():
+    return render_template('results.html', title='Results')
+
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():

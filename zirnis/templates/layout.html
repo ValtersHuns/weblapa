@@ -33,6 +33,16 @@
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
               <a class="nav-item nav-link" href="{{ url_for('about') }}">About</a>
+              <div class="dropdown show">
+                <a class="nav-item nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Biology ▼
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="{{ url_for('atteli') }}">Images</a>
+                  <a class="dropdown-item" href="{{ url_for('result') }}">Results</a>
+                </div>
+            </div>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
