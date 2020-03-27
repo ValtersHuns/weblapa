@@ -41,9 +41,19 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <a class="dropdown-item" href="{{ url_for('atteli') }}">Images</a>
                   <a class="dropdown-item" href="{{ url_for('result') }}">Results</a>
-                  <a class="dropdown-item" href="{{ url_for('test') }}">Test</a> 
                 </div>
             </div>
+            <div class="dropdown show">
+              <a class="nav-item nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Particle effects ▼
+              </a>
+            
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="{{ url_for('test') }}">Particles 1</a>
+                <a class="dropdown-item" href="#">Particles 2</a>
+                <a class="dropdown-item" href="#">Particles 3</a> 
+              </div>
+          </div>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">

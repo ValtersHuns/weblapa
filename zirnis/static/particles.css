@@ -1,10 +1,10 @@
-*
-{
-   margin: 0; 
-   padding: 0; 
-}
-#particles-js{
-    background-color: rgb(177, 19, 124);
+body {
+    background-color: red;   
+    background-image: url(fallback-gradient.svg); 
+    
+    background-image: linear-gradient(to right, red, #f06d06);
+    margin: 0px;
+    overflow: hidden;
     height: 100vh;
-
-}
+  }
+      
