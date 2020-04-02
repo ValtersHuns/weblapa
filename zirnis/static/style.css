@@ -5,3 +5,8 @@ body {
   overflow: hidden;
   height: 100vh;
 }
+.logis{
+  position: absolute;
+  top:100px;
+  left:50px;
+}

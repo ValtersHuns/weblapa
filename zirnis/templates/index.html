@@ -5,7 +5,13 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
-        <div id="particles-js"></div>
+        <div id="particles-js">
+
+        <div id="logis"> 
+            <img src="{{ url_for('static', filename='images/ikona.png') }}" width="100" height="100" class="d-inline-block align-left" alt="">
+        </div>
+
+        </div>
         <script type="text/javascript" src="{{ url_for('static', filename='js/particles.js') }}"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
     </body>
