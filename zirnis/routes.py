@@ -32,6 +32,10 @@ def result():
 def test():
     return render_template('test.html', title='Test')
 
+@app.route("/biology/test2")
+def test2():
+    return render_template('index.html', title='Test')
+
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
