@@ -1,8 +1,5 @@
 body {
-  background-color: red;   
-  background-image: url(fallback-gradient.svg); 
-  
-  background-image: linear-gradient(to right, red, #f06d06);
+  background-color: #17043a;
   margin: 0px;
   overflow: hidden;
   height: 100vh;
