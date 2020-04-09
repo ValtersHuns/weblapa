@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
         <meta charset="utf-8">
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        {% if title %}
+        <title>Zirnis - {{ title }}</title>
+    {% else %}
+        <title>Zirnis</title>
+    {% endif %}  
     </head>
     <body>
         <div id="particles-js">
             <div class="logis" style="height: 150px; width: 150px;">
-                <a style="width: 150px;height: 150px;" href="/home">
+                <a style="width: 150px;height: 150px;" href="">
                     <img src="{{ url_for('static', filename='images/ikona.png') }}" width="150" height="150" style="opacity: 0.96;"  alt="">
                 </a>
             </div>
