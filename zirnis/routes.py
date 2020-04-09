@@ -9,6 +9,8 @@ from flask_login import login_user, current_user, logout_user, login_required
 
 
 @app.route("/")
+def test2():
+    return render_template('index.html', title='Home')
 @app.route("/home")
 def home():
     page = request.args.get('page', 1, type=int)
@@ -31,11 +33,6 @@ def result():
 @app.route("/biology/test")
 def test():
     return render_template('test.html', title='Test')
-
-@app.route("/biology/test2")
-def test2():
-    return render_template('index.html', title='Test')
-
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
