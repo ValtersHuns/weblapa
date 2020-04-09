@@ -20,7 +20,8 @@
         </div>
         <script type="text/javascript" src="{{ url_for('static', filename='js/particles.js') }}"></script>
         <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
-            <audio src="{{ url_for('static', filename='music/song.mp3') }}">
+            <audio autoplay loop>
+                <source src="{{ url_for('static', filename='music/song.mp3') }}"> 
             </audio>
     </body>
 </html>
