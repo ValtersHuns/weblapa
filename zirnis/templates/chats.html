@@ -1,0 +1,35 @@
+{% extends "cats.html" %}
+
+{% block saturs %}
+<div class="container bootstrap">
+  <div class="row info-box">
+    <div class="col-md-6">
+      <h2>⌘ StartIT tērzētava</h2>
+    </div>
+    <div class="col-md-6">
+      <p id="versija"></p>
+    </div>
+  </div>
+  <div class="row">
+    <!-- selected chat -->
+    <div class="col-md-12">
+      <div class="chat-message">
+        <ul class="chat" id="chats">
+            <li class="left clearfix">
+            </li>                   
+        </ul>
+      </div>           
+		</div>
+  </div>
+  <div class="row">
+    <div class="chat-box">
+      <div class="input-group">
+        <input id="zinja" class="form-control border no-shadow no-rounded" placeholder="Rakstiet savu ziņu un spiediet Enter vai Sūtīt" type="text">
+        <span class="input-group-btn">
+          <button onClick="suutiZinju();" class="btn btn-success no-rounded" type="button">Sūtīt</button>
+        </span>
+      </div><!-- /input-group -->	
+    </div> 
+  </div>
+</div>
+{% endblock %}

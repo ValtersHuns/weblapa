@@ -1,11 +1,12 @@
 import os
 import secrets
 from PIL import Image
-from flask import render_template, url_for, flash, redirect, request, abort
-from zirnis import app, db, bcrypt
+from flask import render_template, url_for, flash, redirect, request, abort, json, jsonify
+from zirnis import app, db, bcrypt, chats
 from zirnis.forms import RegistrationForm, LoginForm, UpdateAccountForm, PostForm
 from zirnis.models import User, Post
 from flask_login import login_user, current_user, logout_user, login_required
+
 
 
 @app.route("/")
@@ -16,6 +17,31 @@ def home():
     page = request.args.get('page', 1, type=int)
     posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
     return render_template('home.html', posts=posts)
+
+
+@app.route('/chat')
+def index_lapa():
+  return render_template('chats.html')
+
+
+@app.route('/health')
+def health_check():
+  return "OK"
+
+
+@app.route('/chats/lasi')
+def ielasit_chatu():
+  return chats.lasi()
+
+
+@app.route('/chats/suuti', methods=['POST'])
+def suutiit_zinju():
+  dati = request.json
+  
+  chats.pieraksti_zinju(dati)
+
+  return chats.lasi()
+  
 
 
 @app.route("/about")
