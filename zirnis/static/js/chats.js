@@ -1,6 +1,5 @@
 const ATJAUNOT = 1000;
-const VERSIJA = "0.5"
-var vards = "Viesis"
+var vards = "Guest"
 
 
 /*
@@ -16,7 +15,7 @@ class Chats {
     // pārbaudām vai ir vispār kāda jau esoša ziņa
     // ja nav, parādām paziņojumu (tikai lokāli!)
     if (dati.chats.length == 0) {
-      this.zinjas = [new Zinja("Pārlūkprogramma", "Čatā pašlaik ziņu nav, uzrakstiet kaut ko!")];
+      this.zinjas = [new Zinja("Pārlūkprogramma", "Write something!")];
     }
 
     // no atsūtītajiem datiem izveidojam masīvu ar zinju objektiem
@@ -121,7 +120,7 @@ async function suutiZinju() {
         let dati = new Chats(datuObjekts);
         dati.raadiChataRindas();
     } else {
-        console.log("Tukšu ziņu nesūtām uz serveri")
+        console.log("Don't send empty messages")
     }
 }
 
@@ -168,9 +167,6 @@ function paradiPalidzibu() {
 }
 
 
-// Ērtības funkcionalitāte
-var versijasLauks = document.getElementById("versija");
-versijasLauks.innerHTML = "JS versija: " + VERSIJA;
 // Atrod ievades lauku
 var ievadesLauks = document.getElementById("zinja");
 // Gaida signālu no klaviatūras, ka ir nospiests Enter taustiņš

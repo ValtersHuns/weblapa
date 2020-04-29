@@ -21,12 +21,10 @@ def home():
 
 @app.route('/chat')
 def index_lapa():
-  return render_template('chats.html')
-
-
-@app.route('/health')
-def health_check():
-  return "OK"
+    if current_user.is_authenticated:
+        return render_template('chats.html')
+    else:
+        return redirect(url_for('login'))
 
 
 @app.route('/chats/lasi')
