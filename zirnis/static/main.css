@@ -8,16 +8,16 @@ body {
     background-color: teal;
   }
   20% {
-    background-color: gold;
+    background-color: rgb(115, 133, 185);
   }
   40% {
-    background-color: indianred;
+    background-color: rgb(77, 109, 216);
   }
   60% {
     background-color: violet;
   }
   80% {
-    background-color: green;
+    background-color: rgb(116, 132, 156);
   }
   100% {
     background-color: teal;
