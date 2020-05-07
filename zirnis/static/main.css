@@ -1,6 +1,6 @@
 body {
   margin-top: 5rem;
-  animation: 10000ms ease-in-out infinite color-change;
+  animation: 30000ms ease-in-out infinite color-change;
 }
 
 @keyframes color-change {
