@@ -1,1 +1,2 @@
-{"vards": "Serveris", "zinja": "Hello everyone!"}
+{"vards": "Sveiki visiem!", "zinja": "Hello everyone!"}
+{"vards": "Guest", "zinja": "asd"}

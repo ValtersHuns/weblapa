@@ -4,7 +4,7 @@ body {
 }
 
 .bg-white {
-  background-color: #fff;
+  background-color: rgb(143, 141, 141);
 }
 
 .chat-message {
@@ -32,7 +32,7 @@ ul.chat {
 }
 
 .chat li.left .chat-body {
-  background-color: #fff;
+  background-color: rgb(138, 138, 138);
 }
 
 .chat li .chat-body {
@@ -59,7 +59,7 @@ ul.chat {
   top: 10px;
   left: -8px;
   display: inline-block;
-  background: #fff;
+  background: rgb(104, 104, 104);
   width: 16px;
   height: 16px;
   border-top: 1px solid #f1f5fc;
@@ -92,7 +92,7 @@ ul.chat {
 }
 
 .btn-success {
-  background-color: #276FBF;
+  background-color: gray;
 }
 
 .btn-success:hover {
@@ -108,9 +108,4 @@ input[type=text] {
 a:hover, a:active, a:focus {
   text-decoration: none;
   outline: 0;
-}
-
-#versija {
-  text-align: right;
-  color: grey;
 }
