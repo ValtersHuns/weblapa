@@ -1,7 +1,7 @@
 body {
   padding-top: 0;
   margin-top:20px;
-  background-image: url("bekground.jpeg");
+  background-image: url("static/img/bekground.jpg");
 }
 
 .bg-white {
