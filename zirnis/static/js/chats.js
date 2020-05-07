@@ -1,24 +1,16 @@
 const ATJAUNOT = 1000;
 var vards = "Guest"
 
-
-/*
-Klase, kas satur visu chata saturu, struktūru un metainformāciju
-Inicializē ar no servera atgriezto json objektu
-Un veic dažas vienkāršas pārbaudes
-*/
 class Chats {
   constructor(dati) {
     this.vards = vards;
     this.zinjas = [];
 
-    // pārbaudām vai ir vispār kāda jau esoša ziņa
-    // ja nav, parādām paziņojumu (tikai lokāli!)
+  
     if (dati.chats.length == 0) {
       this.zinjas = [new Zinja("Pārlūkprogramma", "Write something!")];
     }
 
-    // no atsūtītajiem datiem izveidojam masīvu ar zinju objektiem
     for (const rinda of dati.chats) {
       const zinja = new Zinja(rinda.vards, rinda.zinja);
       this.add(zinja);
@@ -31,25 +23,19 @@ class Chats {
 
   raadiChataRindas() {
     const chatUL = document.getElementById("chats");
-    // novaacam ieprieksheejo saturu
     while (chatUL.firstChild) {
         chatUL.firstChild.remove();
     }
-    // pievienojam visas zinjas
     for (const zinja of this.zinjas) {
       let chatLI = zinja.formateRindu();
       chatUL.appendChild(chatLI);
     }
-    // noskrolleejam uz leju pie peedeejaa chata texta
     var chatScrollBox = chatUL.parentNode;
     chatScrollBox.scrollTop = chatScrollBox.scrollHeight;
   }
 }
 
-/*
-Klase, kas satur visu vienas ziņas saturu, struktūru un metainformāciju
-Inicializē ar no servera atgrieztā json objekta vienu rindu
-*/
+
 class Zinja {
   constructor(vards, zinja) {
     this.vards = vards;
