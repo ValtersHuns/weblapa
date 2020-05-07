@@ -1,33 +1,27 @@
-@keyframes bgcolor {
-  0% {
-      background-color: #45a3e5
-  }
-
-  30% {
-      background-color: #66bf39
-  }
-
-  60% {
-      background-color: #eb670f
-  }
-
-  90% {
-      background-color: #f35
-  }
-
-  100% {
-      background-color: #864cbf
-  }
+body {
+  margin-top: 5rem;
+  animation: 10000ms ease-in-out infinite color-change;
 }
 
-
-
-body {
-  -webkit-animation: bgcolor 20s infinite;
-  animation: bgcolor 10s infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  margin-top: 5rem;
+@keyframes color-change {
+  0% {
+    background-color: teal;
+  }
+  20% {
+    background-color: gold;
+  }
+  40% {
+    background-color: indianred;
+  }
+  60% {
+    background-color: violet;
+  }
+  80% {
+    background-color: green;
+  }
+  100% {
+    background-color: teal;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
