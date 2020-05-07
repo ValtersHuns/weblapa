@@ -1,10 +1,11 @@
 body {
   padding-top: 0;
   margin-top:20px;
+  background-color: rgb(37, 37, 37);
 }
 
 .bg-white {
-  background-color: rgb(143, 141, 141);
+  background-color: rgb(196, 196, 196);
 }
 
 .chat-message {
@@ -32,7 +33,7 @@ ul.chat {
 }
 
 .chat li.left .chat-body {
-  background-color: rgb(138, 138, 138);
+  background-color: rgb(196, 196, 196);
 }
 
 .chat li .chat-body {
@@ -96,7 +97,7 @@ ul.chat {
 }
 
 .btn-success:hover {
-  background-color: blue;
+  background-color: rgb(2, 2, 2);
 }
 
 input[type=text] {
